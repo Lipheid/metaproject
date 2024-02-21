@@ -1,0 +1,8 @@
+.result{
+    width:20%;
+    max-height: 100vh;
+    background-color: gray;
+    overflow-y: auto ;
+
+
+}

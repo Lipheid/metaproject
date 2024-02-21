@@ -1,0 +1,45 @@
+.info{
+    width:100%;
+    height:300px;
+    background-color: gray;
+    position: relative;
+    word-break: keep-all;
+    
+}
+.info:hover{
+    width:100%;
+    height:300px;
+    background-color: rgb(66, 66, 66);
+    position: relative;
+    
+}
+.name{
+    position: absolute;
+    top:20px;
+    font-size:  40px;
+    left:10px
+   
+}
+.master{
+    position: absolute; 
+    top:100px;
+    right:30px;
+    font-size:  30px;
+    
+}
+.mation{
+margin:  0 auto;
+text-align: left;
+position: absolute;
+bottom: 60px;
+left:10px;
+}
+.address{
+   font-size: 15px;
+}
+.number{
+    font-size: 15px;
+}
+.url{
+    font-size: 15px;
+}
