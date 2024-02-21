@@ -4,6 +4,7 @@
     background-color: gray;
     position: relative;
     word-break: keep-all;
+    cursor: pointer;
     
 }
 .info:hover{
