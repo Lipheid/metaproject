@@ -1,0 +1,191 @@
+[
+    {
+        "id": 1,
+        "name": "테크네 주짓수 세종",
+        "master": "이동현",
+        "address": "세종특별자치시 남세종로 454 강남제일타워 3층 302호",
+        "phone": "044-867-6244",
+        "website": "https://blog.naver.com/techne_sj_bjjl",
+        "region": "세종"
+    },
+    {
+        "id": 2,
+        "name": "필 주짓수",
+        "master": "김태운",
+        "address": "세종특별자치시 새롬중앙로 62-15 518호 필주짓수",
+        "phone": "044-863-5008",
+        "website": "http://www.instagram.com/dcbs_feel",
+        "region": "세종"
+    },
+    {
+        "id": 3,
+        "name": "아레나 주짓수",
+        "master": "정용희",
+        "address": "세종시 소담1로 12 409호",
+        "phone": "044-863-4416",
+        "website": "https://www.instargram.com/bjj.arena",
+        "region": "세종"
+    },
+    {
+        "id": 4,
+        "name": "세종 반곡주짓수",
+        "master": "황방연",
+        "address": "세종특별자치시 반곡동 867 그랜드타워 508호",
+        "phone": "010-5737-7179",
+        "website": "",
+        "region": "세종"
+    },
+    {
+        "id": 5,
+        "name": "태권짐",
+        "master": "권순관",
+        "address": "세종특별자치시 달빛로 41 백두산빌딩5층",
+        "phone": "044-866-7982",
+        "website": "https://m.blog.naver.com/pando222",
+        "region": "세종"
+    },
+    {
+        "id": 6,
+        "name": "동천백산 팀필",
+        "master": "이은필",
+        "address": "세종특별자치시 아름동 1295 외1필지 해피라움1 4층 409호",
+        "phone": "044-863-5008",
+        "website": "http://www.blog.naver.com/dcbs_feel",
+        "region": "세종"
+    },
+    {
+        "id": 7,
+        "name": "세종시 주짓수 아카데미",
+        "master": "신동준",
+        "address": "세종특별자치시 한누리대로 583 806호",
+        "phone": "044-868-1779",
+        "website": "https://www.instagram.com/sj_bjj_academy/",
+        "region": "세종"
+    },
+    {
+        "id": 8,
+        "name": "세종시 주짓수 아카데미 2관",
+        "master": "한상원",
+        "address": "세종특별자치시 마음로 74 304호(세종시주짓수아카데미 2관)",
+        "phone": "010-5597-7141",
+        "website": "http://www.instagram.com/sj_bjj_academy2",
+        "region": "세종"
+    },
+    {
+        "id": 9,
+        "name": "몬스터주짓수",
+        "master": "염진섭",
+        "address": "세종특별자치시 마음로 272-11 4층, 401호",
+        "phone": "044-866-6602",
+        "website": "https://blog.naver.com/elitenov31",
+        "region": "세종"
+    },
+    {
+        "id": 10,
+        "name": "써밋주짓수 세종",
+        "master": "최은창",
+        "address": "세종특별자치시 조치원읍 세종로 2282 럭스스퀘어 714호",
+        "phone": "044-863-4746",
+        "website": "http://instagram.com/sejong_bjj",
+        "region": "세종"
+    },
+    {
+        "id": 11,
+        "name": "한림주짓수",
+        "master": "안치훈",
+        "address": "제주특별자치도 제주시 한림읍 한림중앙로 27 2층",
+        "phone": "064-796-5559",
+        "website": "",
+        "region": "제주"
+    },
+    {
+        "id": 12,
+        "name": "제주 주짓수월드 삼화점",
+        "master": "강규선",
+        "address": "제주특별자치도 제주시 화삼로 23 4층 주짓수월드 삼화점",
+        "phone": "064-753-1228",
+        "website": "",
+        "region": "제주"
+    },
+    {
+        "id": 13,
+        "name": "제주주짓수월드",
+        "master": "장윤상",
+        "address": "제주특별자치도 제주시 연삼로 384 2층",
+        "phone": "064-752-2221",
+        "website": "https://blog.naver.com/jejiu",
+        "region": "제주"
+    },
+    {
+        "id": 14,
+        "name": "제주주짓수월드 연동",
+        "master": "양진현",
+        "address": "제주특별자치도 제주시 국기로 7 3층 연동주짓수월드",
+        "phone": "010-6630-4534",
+        "website": "https://blog.naver.com/jiujitsuworld_yd",
+        "region": "제주"
+    },
+    {
+        "id": 15,
+        "name": "터틀주짓수 서귀포지부",
+        "master": "강세니",
+        "address": "제주특별자치도 서귀포시 태평로 488 3층 주짓수",
+        "phone": "010-7933-2339",
+        "website": "",
+        "region": "제주"
+    },
+    {
+        "id": 16,
+        "name": "제주 주짓수 팀루츠",
+        "master": "이창현",
+        "address": "제주특별자치도 제주시 원노형남1길 19 2층 제주 주짓수 팀루츠",
+        "phone": "064-712-5262",
+        "website": "https://teamrootsjeju.modoo.at/",
+        "region": "제주"
+    },
+    {
+        "id": 17,
+        "name": "파라에스트라제주(신서귀포주짓수)",
+        "master": "강두호",
+        "address": "제주특별자치도 서귀포시 신중남로 26 2층 201호",
+        "phone": "010-8805-7039",
+        "website": "https://www.instagram.com/paraestra_jeju",
+        "region": "제주"
+    },
+    {
+        "id": 18,
+        "name": "올주짓수 삼화",
+        "master": "문도의",
+        "address": "제주특별자치도 제주시 건주로4길 6-8 4F 402호",
+        "phone": "010-9676-2074",
+        "website": "http://www.instagram.com/wol_bjj_samhwa",
+        "region": "제주"
+    },
+    {
+        "id": 19,
+        "name": "구제주주짓수",
+        "master": "이성호",
+        "address": "제주특별자치도 제주시 고마로15길 9 3층 제주터틀즈 동천백산유술회",
+        "phone": "064-900-5292",
+        "website": "http://blog.naver.com/leeca88",
+        "region": "제주"
+    },
+    {
+        "id": 20,
+        "name": "팀HJ 스캠프짐",
+        "master": "고승용",
+        "address": "제주특별자치도 제주시 한라대학로 17 4층 스캠프",
+        "phone": "010-3389-6314",
+        "website": "https://www.instagram.com/scamp_gym",
+        "region": "제주"
+    },
+    {
+        "id": 21,
+        "name": "올주짓수 아라",
+        "master": "장지웅",
+        "address": "제주특별자치도 제주시 아봉로 5 2층 올주짓수 아라",
+        "phone": "010-5923-1224",
+        "website": "https://blog.naver.com/jejufirstgym",
+        "region": "제주"
+    }
+]
