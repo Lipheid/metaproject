@@ -12,16 +12,14 @@ class Result extends Component {
     this.state = {
       jujitsuData: [],
       filteredData: [],
-      selectedLocation: null, 
+      selectedLocation: null,
     };
 
     this.mapRef = React.createRef();
   }
 
   componentDidMount() {
-
     const jsonFilePath = '/jujitsu.json';
-
 
     fetch(jsonFilePath)
       .then((response) => {
@@ -35,15 +33,16 @@ class Result extends Component {
   }
 
   handleSearch = (selectedLocation) => {
-
     const filteredData = selectedLocation === '전체'
       ? []
       : this.state.jujitsuData.filter((item) => item.region === selectedLocation);
 
-
+    // Pass selectedLocation and filteredData to the Map component
     if (this.mapRef.current) {
-      this.mapRef.current.updateMap(selectedLocation);
-    }    this.setState({ filteredData, selectedLocation });
+      this.mapRef.current.updateMap(selectedLocation, filteredData);
+    }
+
+    this.setState({ filteredData, selectedLocation });
   };
 
   render() {
@@ -65,7 +64,7 @@ class Result extends Component {
           ))}
         </div>
         <div className='map'>
-          <Map selectedLocation={selectedLocation} ref={this.mapRef} />
+          <Map selectedLocation={selectedLocation} filteredData={filteredData} ref={this.mapRef} />
         </div>
       </div>
     );
