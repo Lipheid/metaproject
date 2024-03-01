@@ -23,19 +23,19 @@ function Map({ selectedLocation }) {
 
     const newMap = new kakao.maps.Map(container, options);
     setMap(newMap);
+  }, []);
 
+  useEffect(() => {
     if (map && selectedLocation) {
       const { lat, lng } = locationCoordinates[selectedLocation];
       console.log('Selected Location Coordinates:', { lat, lng });
 
       const moveLatLon = new kakao.maps.LatLng(lat, lng);
-      map.setCenter(moveLatLon);}
-      
-  },  [map, selectedLocation]);
+      map.setCenter(moveLatLon);
+    }
+  }, [map, selectedLocation]);
 
-
-
-
+  // 마커 추가 로직은 기존과 동일하게 유지
 
   return <div id="map" className="map"></div>;
 }
