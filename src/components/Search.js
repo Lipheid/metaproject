@@ -24,7 +24,7 @@ class Search extends Component {
 
   handleSearchClick = () => {
     const { selectedLocation } = this.state;
-    // 선택된 지역 정보를 부모 컴포넌트(Result)에 전달
+    console.log('Selected Location for Search:', selectedLocation);
     this.props.onSearch(selectedLocation);
   };
 
