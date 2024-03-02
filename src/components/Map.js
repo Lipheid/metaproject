@@ -11,7 +11,7 @@ function Map({ selectedLocation, filteredData }) {
   useEffect(() => {
     const container = document.getElementById('map');
     const options = {
-      center: new kakao.maps.LatLng(36.5640736,127.3204855),
+      center: new kakao.maps.LatLng(36.5640736, 127.3204855),
       level: 13,
     };
 
@@ -24,12 +24,13 @@ function Map({ selectedLocation, filteredData }) {
       { offset: new kakao.maps.Point(24, 72) }
     );
 
-    // 마커 클릭 이벤트 핸들러
-    const markerClickHandler = (position) => {
+
+    const markerClickHandler = (position, level) => {
+      map.setLevel(level);
       map.setCenter(position);
     };
 
-    // 선택된 지역의 도장 좌표 표시
+
     if (filteredData && filteredData.length > 0) {
       filteredData.forEach((info) => {
         const { lat, lng } = info;
@@ -39,19 +40,19 @@ function Map({ selectedLocation, filteredData }) {
           image: markerImage,
         });
 
-        // 마커 클릭 이벤트 추가
-        kakao.maps.event.addListener(marker, 'click', () => markerClickHandler(marker.getPosition()));
+
+        kakao.maps.event.addListener(marker, 'click', () => markerClickHandler(marker.getPosition(), 4)); 
 
         marker.setMap(map);
       });
     }
 
-    // 선택된 지역에 해당하는 도장 정보가 있을 경우 지도를 해당 지역으로 이동
+ 
     if (selectedLocation) {
       const cityCoordinates = {
-        전체: { lat: 36.5640736, lng: 127.3204855, level: 13 },
-        세종: { lat: 36.5400000, lng: 127.3204855, level: 7 },  // 세종의 예시 좌표 및 level
-        제주: { lat: 33.3666, lng: 126.53, level: 9 },  // 제주의 예시 좌표 및 level
+        초기화면: { lat: 36.5640736, lng: 127.3204855, level: 13 },
+        세종: { lat: 36.5400000, lng: 127.3204855, level: 7 }, 
+        제주: { lat: 33.3666, lng: 126.53, level: 9 },  
       };
 
       const selectedCoordinates = cityCoordinates[selectedLocation];

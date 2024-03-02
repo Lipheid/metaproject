@@ -7,7 +7,7 @@ class Search extends Component {
     super(props);
     this.state = {
       selectedLocation: null,
-      locations: ['전체','세종', '제주'], // 여러 지역 목록
+      locations: ['초기화면','세종', '제주'], 
       isLocateClick: false,
     };
   }
@@ -24,7 +24,6 @@ class Search extends Component {
 
   handleSearchClick = () => {
     const { selectedLocation } = this.state;
-    // 선택된 지역 정보를 부모 컴포넌트(Result)에 전달
     this.props.onSearch(selectedLocation);
   };
 

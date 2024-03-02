@@ -33,11 +33,10 @@ class Result extends Component {
   }
 
   handleSearch = (selectedLocation) => {
-    const filteredData = selectedLocation === '전체'
+    const filteredData = selectedLocation === '초기화면'
       ? []
       : this.state.jujitsuData.filter((item) => item.region === selectedLocation);
 
-    // Pass selectedLocation and filteredData to the Map component
     if (this.mapRef.current) {
       this.mapRef.current.updateMap(selectedLocation, filteredData);
     }
