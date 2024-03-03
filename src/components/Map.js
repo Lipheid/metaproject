@@ -2,11 +2,13 @@
 
 import React, { useEffect, useRef } from 'react';
 import './css/Map.css';
-import markerimg from './img/marker.png';
+import marker from './img/marker.png';
+import clickmarker from './img/marker_click.png'
 const { kakao } = window;
 
 function Map({ selectedLocation, filteredData }) {
   const mapRef = useRef(null);
+  const markers = useRef([]);
 
   useEffect(() => {
     const container = document.getElementById('map');
@@ -19,17 +21,29 @@ function Map({ selectedLocation, filteredData }) {
     mapRef.current = map;
 
     const markerImage = new kakao.maps.MarkerImage(
-      markerimg,
+      marker,
       new kakao.maps.Size(48, 72),
       { offset: new kakao.maps.Point(24, 72) }
     );
 
+    const clickMarkerImage = new kakao.maps.MarkerImage(
+      clickmarker,
+      new kakao.maps.Size(48, 72),
+      { offset: new kakao.maps.Point(24, 72) }
+    );
 
-    const markerClickHandler = (position, level) => {
+    const resetMarkers = () => {
+      markers.current.forEach((m) => {
+        m.setImage(markerImage);
+      });
+    };
+
+    const markerClickHandler = (position, level, marker) => {
+      resetMarkers();
+      marker.setImage(clickMarkerImage);
       map.setLevel(level);
       map.setCenter(position);
     };
-
 
     if (filteredData && filteredData.length > 0) {
       filteredData.forEach((info) => {
@@ -40,14 +54,13 @@ function Map({ selectedLocation, filteredData }) {
           image: markerImage,
         });
 
+        kakao.maps.event.addListener(marker, 'click', () => markerClickHandler(marker.getPosition(), 4, marker));
 
-        kakao.maps.event.addListener(marker, 'click', () => markerClickHandler(marker.getPosition(), 4)); 
-
+        markers.current.push(marker);
         marker.setMap(map);
       });
     }
 
- 
     if (selectedLocation) {
       const cityCoordinates = {
         초기화면: { lat: 36.5640736, lng: 127.3204855, level: 13 },
