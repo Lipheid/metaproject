@@ -1,5 +1,3 @@
-// Map.js
-
 import React, { useEffect, useRef } from 'react';
 import './css/Map.css';
 import marker from './img/marker.png';

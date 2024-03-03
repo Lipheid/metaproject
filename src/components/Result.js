@@ -1,5 +1,3 @@
-// Result.js
-
 import React, { Component } from 'react';
 import Info from './Info.js';
 import './css/Result.css';
